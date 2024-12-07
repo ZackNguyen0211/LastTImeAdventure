@@ -4,8 +4,8 @@ import Entity.Entity;
 import Entity.Player;
 import Tiles.TileManager;
 import Object.SuperObject;
-import PathFinder.PathFinding;
-import monster.MON_Bat;
+import PathFinder.*;
+import monster.*;
 
 import javax.swing.*;
 import java.awt.*;

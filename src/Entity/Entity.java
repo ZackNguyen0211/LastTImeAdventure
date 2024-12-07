@@ -1,3 +1,4 @@
+package Entity;
 
 import Main.GamePanel;
 import Main.UtilityTool;
