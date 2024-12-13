@@ -1,0 +1,6 @@
+0 = grass
+1 = wall
+2 = water
+3 = tree
+4 = dirt
+5 = sand
