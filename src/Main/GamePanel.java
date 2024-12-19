@@ -113,7 +113,7 @@ public class GamePanel extends JPanel implements Runnable {
     public void run(){
         //"Delta" method for GameLoop
         //60 FPS
-        double drawInterval = (double) 1000000000 /FPS; //0.01666s
+        double drawInterval = (double) 1000000000 /FPS;
         double delta = 0;
         long lastTime = System.nanoTime();
         long currentTime;
@@ -125,8 +125,8 @@ public class GamePanel extends JPanel implements Runnable {
 
             if(delta >= 1){
                 update();
-                drawToTempScreen(); //G2 draw image to the tempScreen
-                drawToScreen(); // draw image from the tempScreen to the screen
+                drawToTempScreen();
+                drawToScreen();
                 delta--;
             }
         }
@@ -206,7 +206,7 @@ public class GamePanel extends JPanel implements Runnable {
                     bat[i].draw(g2);
                 }
             }
-            //monster
+            //slime
             for (int i = 0; i < slime.length; i++) {
                 if (slime[i] != null) {
                     slime[i].draw(g2);
