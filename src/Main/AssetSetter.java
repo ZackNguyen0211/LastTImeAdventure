@@ -11,8 +11,8 @@ public class AssetSetter {
     public void setObject(){}
     public void setBat(){
         gp.bat[0] = new MON_Bat(gp);
-        gp.bat[0].worldX = 31 * gp.tileSize;
-        gp.bat[0].worldY = 9 * gp.tileSize;
+        gp.bat[0].worldX = 29 * gp.tileSize;
+        gp.bat[0].worldY = 7 * gp.tileSize;
 
         gp.bat[1] = new MON_Bat(gp);
         gp.bat[1].worldX = 14 * gp.tileSize;
@@ -22,7 +22,7 @@ public class AssetSetter {
     public void setSlime(){
         gp.slime[0] = new MON_GreenSlime(gp);
         gp.slime[0].worldX = 14 * gp.tileSize;
-        gp.slime[0].worldY = 9 * gp.tileSize;
+        gp.slime[0].worldY = 7 * gp.tileSize;
 
         gp.slime[1] = new MON_GreenSlime(gp);
         gp.slime[1].worldX = 31 * gp.tileSize;

@@ -34,14 +34,14 @@ public class MON_GreenSlime extends Entity {
         right1 = setup("/Picture/green_slime/green_slime_down_1", gp.tileSize, gp.tileSize);
         right2 = setup("/Picture/green_slime/green_slime_down_2", gp.tileSize, gp.tileSize);
     }
+
     @Override
     public void update(){
         super.update();
-
         int xDistance = Math.abs(worldX - gp.player.worldX);
         int yDistance = Math.abs(worldY - gp.player.worldY);
         int tileDistance = (xDistance + yDistance)/gp.tileSize;
-        if(onPath == false && tileDistance < 5){
+        if(onPath == false && tileDistance < 4){
             int i = new Random().nextInt(100)+1;
             if(i > 50){
                 onPath = true;

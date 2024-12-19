@@ -7,7 +7,6 @@ import javax.sound.sampled.FloatControl;
 import java.net.URL;
 
 public class Sound {
-
     Clip clip;
     URL[] soundURL = new URL[30];
     FloatControl fc;
@@ -39,15 +38,12 @@ public class Sound {
             throw new RuntimeException(e);
         }
     }
-
     public void play(){
         clip.start();
     }
-
     public void loop(){
         clip.loop(Clip.LOOP_CONTINUOUSLY);
     }
-
     public void stop(){
         clip.stop();
     }

@@ -11,7 +11,7 @@ public class MON_Bat extends Entity {
         type = 1;
         direction = "down";
         name = "Bat";
-        speed = 3;
+        speed = 2;
         maxLife = 2;
         life = maxLife;
 
@@ -41,7 +41,7 @@ public class MON_Bat extends Entity {
         int xDistance = Math.abs(worldX - gp.player.worldX);
         int yDistance = Math.abs(worldY - gp.player.worldY);
         int tileDistance = (xDistance + yDistance)/gp.tileSize;
-        if(onPath == false && tileDistance < 5){
+        if(onPath == false && tileDistance < 4){
             int i = new Random().nextInt(100)+1;
             if(i > 50){
                 onPath = true;

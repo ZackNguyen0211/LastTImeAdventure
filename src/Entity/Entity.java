@@ -2,7 +2,6 @@ package Entity;
 
 import Main.GamePanel;
 import Main.UtilityTool;
-
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -22,7 +21,7 @@ public class Entity {
     public String direction = "down";
     public int spriteNum = 1;
     public boolean collisionOn = false;
-    public  boolean invincible = false;
+    public boolean invincible = false;
     public boolean isAttacking = false;
     public boolean alive = true;
     public boolean dying = false;

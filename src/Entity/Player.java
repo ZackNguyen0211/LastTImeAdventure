@@ -107,9 +107,7 @@ public class Player extends Entity{
                     case "right": worldX += speed; break;
                 }
             }
-
             gp.keyH.enterPressed = false;
-
             spriteCounter++;
             if(spriteCounter > 12){
                 if(spriteNum == 1){
@@ -125,15 +123,13 @@ public class Player extends Entity{
                 spriteNum = 1;
                 standCounter = 0;
             }
-        }
-        if(invincible){
+        } if(invincible) {
             invincibleCounter++;
             if(invincibleCounter > 60){
                 invincible = false;
                 invincibleCounter = 0;
             }
-        }
-        if(life <= 0){
+        } if(life <= 0) {
             gp.stopMusic();
             gp.playSE(4);
             gp.gameState = gp.gameOverState;
@@ -146,7 +142,6 @@ public class Player extends Entity{
         }
         if (spriteCounter > 5 && spriteCounter <= 25) {
             spriteNum = 2;
-
             //Save current WorldX, WorldY area.
             int currentWorldX = worldX;
             int currentWorldY = worldY;
@@ -183,6 +178,7 @@ public class Player extends Entity{
             isAttacking = false;
         }
     }
+
     public void damageGreenSlime(int i){
         if (i != 999) {
             if(gp.slime[i].invincible == false){
@@ -196,6 +192,7 @@ public class Player extends Entity{
             }
         }
     }
+
     public void damageBat(int i){
         if (i != 999) {
             if(gp.bat[i].invincible == false){
@@ -209,21 +206,24 @@ public class Player extends Entity{
             }
         }
     }
+
     private void checkIfAttacking() {
         if (gp.keyH.enterPressed) {
             gp.playSE(5);
             isAttacking = true;
         }
     }
+
     public void interactBat(int batIndex){
-        if(batIndex != 999){
-            if(!invincible){
+        if(batIndex != 999) {
+            if(!invincible) {
                 gp.playSE(1);
                 life -= 1;
                 invincible = true;
             }
         }
     }
+
     public void interactGreenSlime(int greenSlimeIndex){
         if(greenSlimeIndex != 999){
             if(!invincible){
@@ -233,11 +233,11 @@ public class Player extends Entity{
             }
         }
     }
+
     public void draw(Graphics2D g2){
         BufferedImage image = null;
         int tempScreenX = screenX;
         int tempScreenY = screenY;
-
         switch (direction) {
             case "up":
                 if (!isAttacking) {
