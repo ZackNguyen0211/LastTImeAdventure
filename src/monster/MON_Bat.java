@@ -37,7 +37,6 @@ public class MON_Bat extends Entity {
     @Override
     public void update(){
         super.update();
-
         int xDistance = Math.abs(worldX - gp.player.worldX);
         int yDistance = Math.abs(worldY - gp.player.worldY);
         int tileDistance = (xDistance + yDistance)/gp.tileSize;

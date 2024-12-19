@@ -24,7 +24,6 @@ public class Config {
         }
     }
     public void loadConfig(){
-
         try {
             BufferedReader br = new BufferedReader(new FileReader("src/config.txt"));
 
