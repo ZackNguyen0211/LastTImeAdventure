@@ -1,7 +1,6 @@
 package PathFinder;
 
 import Main.GamePanel;
-
 import java.util.ArrayList;
 
 public class PathFinding {
@@ -30,7 +29,6 @@ public class PathFinding {
         }
     }
     public void resetNodes(){
-
         int col = 0;
         int row = 0;
         while(col < gp.maxWorldCol && row < gp.maxWorldRow){

@@ -3,9 +3,7 @@ import java.awt.image.BufferedImage;
 
 import Main.GamePanel;
 import Main.UtilityTool;
-
 import java.awt.Graphics2D;
-import java.awt.Rectangle;
 
 public class SuperObject {
     public BufferedImage image, image2, image3;

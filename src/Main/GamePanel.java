@@ -5,8 +5,6 @@ import Entity.Player;
 import Tiles.TileManager;
 import Object.SuperObject;
 import PathFinder.*;
-import monster.*;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
